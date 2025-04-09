@@ -1,0 +1,56 @@
+# Contexte:
+
+Dans un environnement personnel et professionnel, la gestion des projets et des tâches est essentielle pour
+organiser le travail, respecter les délais et favoriser la collaboration. L’objectif de ce TP est de développer une
+application back-end en PHP pour la Gestion Collaborative de Tâches et de Projets. Ce système doit mettre
+en œuvre les concepts clés de la programmation orientée objet (POO) : héritage, polymorphisme et
+interfaces, ainsi que l’utilisation de PDO pour un accès sécurisé à la base de données MySQL (ou compatible),
+tout en respectant l’architecture MVC.
+
+
+# Plan de Développement
+
+## 1 - Infrastructure
+
+> - [x] Créer l’arborescence du projet (`app/`, `config/`, `public/`, `vendor/`)
+> - [ ] Créer la base de données `gestion_projets`
+> - [ ] Configurer la BDD et créer `config/config.php` (connexion)
+> - [ ] Créer `Core/Model.php` : classe abstraite pour la connexion PDO
+> - [ ] Créer `Core/Controller.php` : classe de base pour les contrôleurs (chargement des vues)
+> - [x] Créer `Core/Interfaces/CrudInterface.php` : interface avec les méthodes CRUD
+> - [ ] Créer `Core/Router.php` : analyse les URLs et appelle le bon contrôleur
+> - [ ] Créer le fichier `public/index.php` : front-controller, inclut le routeur
+
+## 2 – Développement des modules
+
+### Module Projets
+> - [ ] Créer `Models/Project.php` (implémente CrudInterface)
+> - [ ] Créer `Controllers/ProjectController.php`
+> - [ ] Créer les vues dans `Views/projects/` (`list.php`, `form.php`, `detail.php`)
+
+### Module Tâches
+> - [ ] Créer `Models/Task.php` (implémente CrudInterface)
+> - [ ] Créer `Controllers/TaskController.php`
+> - [ ] Créer les vues dans `Views/tasks/`
+
+### Module Utilisateurs
+> - [ ] Créer `Models/User.php` (implémente CrudInterface)
+> - [ ] Créer `Controllers/UserController.php`
+> - [ ] Créer les vues dans `Views/users/` (`login.php`, `register.php`, `dashboard.php`)
+> - [ ] Implémenter l’inscription et la connexion avec `password_hash` et `password_verify`
+> - [ ] Gérer les rôles : Admin, Chef de projet, Collaborateur
+
+## 3 – Sécurisation & tests
+
+> - [ ] Valider les entrées utilisateur
+> - [ ] Sécuriser les requêtes avec PDO préparé
+> - [ ] Vérifier la gestion des sessions et accès selon les rôles
+> - [ ] Tester toutes les actions (CRUD, navigation, connexions)
+> 
+## 4 – (Bonus) API RESTful
+
+> - [ ] Créer des endpoints REST pour Projets & Tâches (`GET`, `POST`, `PUT`, `DELETE`)
+> - [ ] Ajouter un contrôleur `ApiController.php`
+> - [ ] Rédiger la documentation API (ex: Swagger, Postman collection)
+> 
+---
