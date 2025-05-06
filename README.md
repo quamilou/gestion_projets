@@ -43,9 +43,9 @@ tout en respectant l’architecture MVC.
 ## 3 – Sécurisation & tests
 
 > - [ ] Valider les entrées utilisateur
-> - [ ] Sécuriser les requêtes avec PDO préparé
+> - [x] Sécuriser les requêtes avec PDO préparé
 > - [ ] Vérifier la gestion des sessions et accès selon les rôles
-> - [ ] Tester toutes les actions (CRUD, navigation, connexions)
+> - [-] Tester toutes les actions (CRUD, navigation, connexions)
 > 
 ## 4 – (Bonus) API RESTful
 
