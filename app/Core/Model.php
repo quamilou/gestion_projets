@@ -13,7 +13,7 @@ abstract class Model {
     private static function initDB(): void {
         try {
             self::$db = new PDO(
-                'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=utf8mb4_general_ci',
+                'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME ,
                 DB_USER,
                 DB_PASS,
                 DB_OPTIONS
