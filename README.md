@@ -13,18 +13,18 @@ tout en respectant l’architecture MVC.
 ## 1 - Infrastructure
 
 > - [x] Créer l’arborescence du projet (`app/`, `config/`, `public/`, `vendor/`)
-> - [ ] Créer la base de données `gestion_projets`
-> - [ ] Configurer la BDD et créer `config/config.php` (connexion)
-> - [ ] Créer `Core/Model.php` : classe abstraite pour la connexion PDO
-> - [ ] Créer `Core/Controller.php` : classe de base pour les contrôleurs (chargement des vues)
+> - [x] Créer la base de données `gestion_projets`
+> - [x] Configurer la BDD et créer `config/config.php` (connexion)
+> - [x] Créer `Core/Model.php` : classe abstraite pour la connexion PDO
+> - [x] Créer `Core/Controller.php` : classe de base pour les contrôleurs (chargement des vues)
 > - [x] Créer `Core/Interfaces/CrudInterface.php` : interface avec les méthodes CRUD
-> - [ ] Créer `Core/Router.php` : analyse les URLs et appelle le bon contrôleur
-> - [ ] Créer le fichier `public/index.php` : front-controller, inclut le routeur
+> - [x] Créer `Core/Router.php` : analyse les URLs et appelle le bon contrôleur
+> - [x] Créer le fichier `public/index.php` : front-controller, inclut le routeur
 
 ## 2 – Développement des modules
 
 ### Module Projets
-> - [ ] Créer `Models/Project.php` (implémente CrudInterface)
+> - [x] Créer `Models/Project.php` (implémente CrudInterface)
 > - [ ] Créer `Controllers/ProjectController.php`
 > - [ ] Créer les vues dans `Views/projects/` (`list.php`, `form.php`, `detail.php`)
 
