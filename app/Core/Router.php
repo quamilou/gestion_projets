@@ -1,8 +1,15 @@
 <?php
 class Router {
     public static function routeRequest(): void {
-        $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) . 'Controller' : 'HomeController';
+        $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) . 'Controller' : null;
         $action = $_GET['action'] ?? 'index';
+        
+        $allowedControllers = ['ProjectController', 'TaskController', 'UserController'];
+
+        if (!in_array($controllerName, $allowedControllers)) {
+            die("Erreur : contrôleur '$controllerName' non autorisé.");
+        }
+
 
         $controllerFile = __DIR__ . '/../Controllers/' . $controllerName . '.php';
 
