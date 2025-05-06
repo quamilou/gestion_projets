@@ -34,11 +34,11 @@ tout en respectant l’architecture MVC.
 > - [x] Créer les vues dans `Views/tasks/` (`list.php`, `form.php`, `detail.php`)
 
 ### Module Utilisateurs
-> - [ ] Créer `Models/User.php` (implémente CrudInterface)
-> - [ ] Créer `Controllers/UserController.php`
-> - [ ] Créer les vues dans `Views/users/` (`login.php`, `register.php`, `dashboard.php`)
-> - [ ] Implémenter l’inscription et la connexion avec `password_hash` et `password_verify`
-> - [ ] Gérer les rôles : Admin, Chef de projet, Collaborateur
+> - [x] Créer `Models/User.php` (implémente CrudInterface)
+> - [x] Créer `Controllers/UserController.php`
+> - [X] Créer les vues dans `Views/users/` (`login.php`, `register.php`, `dashboard.php`)
+> - [x] Implémenter l’inscription et la connexion avec `password_hash` et `password_verify`
+> - [x] Gérer les rôles : Admin, Chef de projet, Collaborateur
 
 ## 3 – Sécurisation & tests
 
