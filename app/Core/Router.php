@@ -1,4 +1,5 @@
 <?php
+
 class Router {
     public static function routeRequest(): void {
         $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) . 'Controller' : null;
