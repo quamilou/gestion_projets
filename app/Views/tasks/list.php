@@ -1,33 +1,34 @@
-<h1>Liste des projets</h1>
+<h1>Liste des tâches</h1>
 
-<a href="index.php?controller=project&action=form">+ Nouveau projet</a>
+<a href="index.php?controller=task&action=form">+ Nouvelle tâche</a>
 
 <table border="1" cellpadding="8" cellspacing="0">
     <thead>
         <tr>
             <th>ID</th>
+            <th>Projet</th>
             <th>Titre</th>
-            <th>Date de début</th>
-            <th>Date de fin</th>
+            <th>Statut</th>
+            <th>Date limite</th>
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-        <?php if (!empty($projects)): ?>
-            <?php foreach ($projects as $project): ?>
+        <?php if (!empty($tasks)): ?>
+            <?php foreach ($tasks as $task): ?>
                 <tr>
-                    <td><?= htmlspecialchars($project['id']) ?></td>
-                    <td><?= htmlspecialchars($project['title']) ?></td>
-                    <td><?= htmlspecialchars($project['start_date']) ?></td>
-                    <td><?= htmlspecialchars($project['end_date']) ?></td>
+                    <td><?= htmlspecialchars($task['id']) ?></td>
+                    <td><?= htmlspecialchars($task['project_id']) ?></td>
+                    <td><?= htmlspecialchars($task['title']) ?></td>
+                    <td><?= htmlspecialchars($task['status']) ?></td>
+                    <td><?= htmlspecialchars($task['due_date']) ?></td>
                     <td>
-                        <a href="index.php?controller=project&action=detail&id=<?= $project['id'] ?>">Voir</a>
-                        <!-- Pour simplifier, pas encore d'édition ou suppression -->
+                        <a href="index.php?controller=task&action=detail&id=<?= $task['id'] ?>">Voir</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>
-            <tr><td colspan="5">Aucun projet trouvé.</td></tr>
+            <tr><td colspan="6">Aucune tâche trouvée.</td></tr>
         <?php endif; ?>
     </tbody>
 </table>
