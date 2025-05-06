@@ -29,9 +29,9 @@ tout en respectant l’architecture MVC.
 > - [x] Créer les vues dans `Views/projects/` (`list.php`, `form.php`, `detail.php`)
 
 ### Module Tâches
-> - [ ] Créer `Models/Task.php` (implémente CrudInterface)
-> - [ ] Créer `Controllers/TaskController.php`
-> - [ ] Créer les vues dans `Views/tasks/`
+> - [x] Créer `Models/Task.php` (implémente CrudInterface)
+> - [x] Créer `Controllers/TaskController.php`
+> - [x] Créer les vues dans `Views/tasks/` (`list.php`, `form.php`, `detail.php`)
 
 ### Module Utilisateurs
 > - [ ] Créer `Models/User.php` (implémente CrudInterface)
