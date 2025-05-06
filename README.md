@@ -52,5 +52,5 @@ tout en respectant l’architecture MVC.
 > - [ ] Créer des endpoints REST pour Projets & Tâches (`GET`, `POST`, `PUT`, `DELETE`)
 > - [ ] Ajouter un contrôleur `ApiController.php`
 > - [ ] Rédiger la documentation API (ex: Swagger, Postman collection)
-> 
+> - [ ] Faire un style 
 ---
